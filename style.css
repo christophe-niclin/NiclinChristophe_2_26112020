@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(police/Raleway/Raleway-VariableFont_wght.ttf) format("truetype");
+}
+
 body {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 h1 {
     font-size: 25px;
@@ -107,10 +112,71 @@ a {
     color: rgb(0, 0, 0);
   }
 .filter {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 
   }
 h4 {
     font-size: 18px;
+    margin-right: 10px;
+}
+.filter_box {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 50px;
+    border: 2px rgb(202, 200, 200) solid;
+    border-radius: 30px;
+    position: relative;
+}
+
+.filter_box_icon {
+    background-color: #deebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px #deebff solid;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+
+}
+.filter_icon {
+    font-size: 20px;
+    color: #0065FC;
+
+}
+.filter_text {
+    padding-right: 20px;
+    padding-left: 60px;
+    font-size: 22px;
+
+}
+.info_box {
+    display: flex;
+    align-items: center;
+
+}
+.info_cercle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 1px grey solid;
+    border-radius: 50%;
+
+}
+.info_icon {
+    color: #0065FC;
+    font-size: 12px;
+
+}
+.info_text {
+    margin-left: 15px;
+
 }
