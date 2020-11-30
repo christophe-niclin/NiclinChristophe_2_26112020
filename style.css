@@ -180,3 +180,52 @@ h4 {
     margin-left: 15px;
 
 }
+.section1 {
+    display: flex;
+    margin: 0px 50px 0px 50px;
+    height: 800px;
+}
+.section1_box1 {
+    background-color: #cfcece;
+    border-radius: 20px;
+    margin-right: 50px;
+    width: 74%;
+    padding: 20px 40px 0px 40px;
+    }
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin-top: -10px;;
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.element1 {
+    width: 29.2%;
+    width: calc(33.33% - 50px); /* -50px because 2*margin+1*border */ 
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px white solid;
+    margin: 20px;
+  }
+  .element1_img {
+    height: 60%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+  }
+  .element1_text1 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    
+  }
+  .element1_text2 {
+    margin-top: 5px;
+    font-size: 15px;
+    }
+.section1_box2 {
+    background-color: #cfcece;
+    border-radius: 20px;
+    width: 26%;
+    padding: 0px 20px 0px 20px;
+}
