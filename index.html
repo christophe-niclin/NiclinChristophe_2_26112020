@@ -12,15 +12,16 @@
                 <img src="images/logo/Reservia.svg" alt="logo_reversia" class="logo">
                 <!-- I choose svg format since it's better for responsive design, it also give a better option for natural reference with image description-->
                 <nav>
-                    <a href="#sl1" id="sl1" class="nav_a">Hébergements</a>
-                    <a href="#sl2" id="sl2" class="nav_a">Activités</a>
+                    <a href="#top" class="nav_a">Hébergements</a>
+                    <!-- focus don't work with link, and target don't work either -->
+                    <a href="#bottom" class="nav_a">Activités</a>
                     <a href="#" class="nav_a"><strong>S'inscrire</strong></a>
                 </nav>
             </header>
 
-            <div class="intro">
+            <div class="search">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="intro_p">En plein centre ville ou en pleine nature</p>
+                <p class="search_p">En plein centre ville ou en pleine nature</p>
 
                 <div class="search_box">
                     <div class="search_element">
@@ -82,7 +83,7 @@
             <section class="section1">
 
                 <div class="section1_box1">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 id="top">Hébergements à Marseille</h2>
 
                     <div class="box1">
 
@@ -90,7 +91,7 @@
 
 
 
-                            <a href="#" class="element1">
+                            <a href="#" class="element1 anchor">
                                 <!-- problem with anchor tag, if it's parent to card (class element1) it cause some problem with padding, 
                                     I can change the tag div by the tag a to have a anchor on all the card, 
                                     or I can put it as a child of div card (class element1-->
@@ -103,7 +104,7 @@
                                 </div>                                
                             </a>
 
-                            <a href="#" class="element1">
+                            <a href="#" class="element1 anchor">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element1_img">
                                 <h4 class="element1_text1">Text</h4>
                                 <p class="element1_text2">paragraphe</p>
@@ -113,7 +114,7 @@
                                 </div>                                
                             </a>
 
-                            <a href="#" class="element1">
+                            <a href="#" class="element1 anchor">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element1_img">
                                 <h4 class="element1_text1">Text</h4>
                                 <p class="element1_text2">paragraphe</p>
@@ -123,7 +124,7 @@
                                 </div>                                
                             </a>
 
-                            <a href="#" class="element1">
+                            <a href="#" class="element1 anchor">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element1_img">
                                 <h4 class="element1_text1">Text</h4>
                                 <p class="element1_text2">paragraphe</p>
@@ -133,7 +134,7 @@
                                 </div>                                
                             </a>
 
-                            <a href="#" class="element1">
+                            <a href="#" class="element1 anchor">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element1_img">
                                 <h4 class="element1_text1">Text</h4>
                                 <p class="element1_text2">paragraphe</p>
@@ -143,7 +144,7 @@
                                 </div>                                
                             </a>
 
-                            <a href="#" class="element1">
+                            <a href="#" class="element1 anchor">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" class="element1_img">
                                 <h4 class="element1_text1">Text</h4>
                                 <p class="element1_text2">paragraphe</p>
@@ -160,12 +161,12 @@
                 </div>
 
                 <div class="section1_box2">
-                    <h2>Les plus populaires</h2>
+                    <h2 >Les plus populaires</h2>
                     <i class="fas fa-chart-line section1_box2_icon"></i>
 
                     <div class="box2">
 
-                        <a href="#" class="element2">
+                        <a href="#" class="element2 anchor">
                             <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element2_img">
                             <div class="element2_text">
                             <h4 class="element2_text1">Text</h4>
@@ -176,7 +177,7 @@
                             </div>      
                             </div>                          
                         </a>
-                        <a href="#" class="element2">
+                        <a href="#" class="element2 anchor">
                             <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element2_img">
                             <div class="element2_text">
                             <h4 class="element2_text1">Text</h4>
@@ -187,7 +188,7 @@
                             </div>     
                         </div>                           
                         </a>
-                        <a href="#" class="element2">
+                        <a href="#" class="element2 anchor">
                             <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="chambre" class="element2_img">
                             <div class="element2_text">
                             <h4 class="element2_text1">Text</h4>
@@ -207,11 +208,11 @@
 
 
             <section class="section2">
-                <h2>Activités à Marseille</h2>
+                <h2 id="bottom">Activités à Marseille</h2>
 
                 <div class="section2_box">
 
-                    <a href="#" class="box3">
+                    <a href="#" class="box3 anchor">
                         <!-- In box3 I can put one or more than one card -->
                         <div class="element3">
                             <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="activités" class="element3_img">
@@ -220,7 +221,7 @@
                     </a>
                     <div class="box3"> 
                         
-                        <a href="#" class="box3_v1">
+                        <a href="#" class="box3_v1 anchor">
                             <div class="element3_v1">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="activités" class="element3_img_v1">
                                 <h4 class="element3_text">Vieux port</h4>
@@ -228,7 +229,7 @@
                             
 
                         </a>
-                        <a href="#" class="box3_v2">
+                        <a href="#" class="box3_v2 anchor">
                             <div class="element3_v2">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="activités" class="element3_img_v2">
                                 <h4 class="element3_text">Vieux port</h4>
@@ -237,7 +238,7 @@
                         </a>
 
                     </div>
-                    <a href="#" class="box3">
+                    <a href="#" class="box3 anchor">
                         <div class="element3">
                             <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="activités" class="element3_img">
                             <h4 class="element3_text">Vieux port</h4>
@@ -245,14 +246,14 @@
                     </a>
                     <div class="box3">  
 
-                        <a href="#" class="box3_v3">
+                        <a href="#" class="box3_v3 anchor">
                             <div class="element3_v3">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="activités" class="element3_img_v3">
                                 <h4 class="element3_text">Vieux port</h4>
                             </div> 
                             
                         </a>
-                        <a href="#" class="box3_v4">
+                        <a href="#" class="box3_v4 anchor">
                             <div class="element3_v4">
                                 <img src="https://www.manga-news.com/public/images/news/news-my-hero-academia-manga.jpg" alt="activités" class="element3_img_v4">
                                 <h4 class="element3_text">Vieux port</h4>

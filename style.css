@@ -37,15 +37,14 @@ a {
     margin-right: 40px;
     color: grey;
 }
-#sl1:target,
-#sl2:target{
+.nav_a:hover {
     color: #0065FC !important;
   border-top: 3px #0065FC solid;
 }
-.intro {
+.search {
     margin: 30px 50px 0px 50px;
 }
-.intro_p {
+.search_p {
     margin-top: -10px;
     font-size: 19px;
     color: rgb(53, 53, 53);
@@ -389,4 +388,7 @@ footer {
 }
 h3 {
     margin-bottom: 26px;
+}
+.anchor {
+    color: black;
 }
