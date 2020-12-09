@@ -1,13 +1,13 @@
+/* Font */
 @font-face {
     font-family: "Raleway";
     src: url(police/Raleway/Raleway-VariableFont_wght.ttf) format("truetype");
 }
-
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 img {
-    color: white; /* hide alt text when loading */
+    color: transparent; /* hide alt text when loading */
 }
 h1 {
     font-size: 25px;
@@ -18,7 +18,8 @@ h1 {
     margin-left: -8px;
     margin-bottom: -8px;
 }
-header {
+/* Navigation */
+.header_main {
     margin: 0px 50px 0px 50px;
     position: relative;
     margin-top: 50px;
@@ -44,6 +45,7 @@ a {
     color: #0065FC !important;
   border-top: 3px #0065FC solid;
 }
+/* Search and Filter field */
 .search {
     margin: 30px 50px 0px 50px;
 }
@@ -58,7 +60,6 @@ a {
     border-radius: 15px;
     width: 460px; 
     height:50px;
-
 }
 .search_element {
     display: flex;
@@ -69,26 +70,21 @@ a {
     align-items: center;
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
-
 }
 .search_element:nth-child(2) {
     width: 60%;    
 }
 .search_element:nth-child(3) {
     width: 30%;
-
 }
 #search_button_p {
     margin: 0;
 }
 #search_button_icon {
-    display: none;
-        
+    display: none;        
 }
-.icon_map {
-    
+.icon_map {    
     font-size: 20px;
-
 }
 #search {
     width: 100%;
@@ -96,8 +92,6 @@ a {
     padding: 0px 10px 0px 20px;
     font-size: 18px;
     font-weight: bold;
-
-
 }
 .search_button {
     width: 100%;
@@ -107,20 +101,15 @@ a {
     font-size:18px;
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
-
-
-
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(0, 0, 0);
     opacity: 1; /* Firefox */
   }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: rgb(0, 0, 0);
   }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+    ::-ms-input-placeholder { /* Microsoft Edge */
     color: rgb(0, 0, 0);
   }
 .filter {
@@ -128,7 +117,6 @@ a {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-
   }
 h4 {
     font-size: 18px;
@@ -159,23 +147,20 @@ h4 {
     border-radius: 50%;
     position: absolute;
     left: -5px;
-
 }
 .filter_icon {
     font-size: 20px;
     color: #0065FC;
-
 }
 .filter_text {
     padding-right: 20px;
     padding-left: 60px;
     font-size: 22px;
-
 }
+/* Box info */
 .info_box {
     display: flex;
     align-items: center;
-
 }
 .info_cercle {
     display: flex;
@@ -185,22 +170,21 @@ h4 {
     height: 25px;
     border: 1px grey solid;
     border-radius: 50%;
-
 }
 .info_icon {
     color: #0065FC;
     font-size: 12px;
-
 }
 .info_text {
     margin-left: 15px;
-
 }
+/* First section */
 .section1 {
     display: flex;
     margin: 0px 50px 0px 50px;
     height: 800px;
 }
+/* Sub-section */
 .section1_box1 {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -248,8 +232,8 @@ h4 {
 }
 .icon_grey {
     color: rgb(184, 183, 183);
-
 }
+/* Sub-section */
 .section1_box2 {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -288,7 +272,6 @@ h4 {
 .element2_text {
     margin-left: 25px;
     position: relative;
-
 }
 .element2_text1 {
     margin-bottom: 8px;
@@ -300,12 +283,15 @@ h4 {
     position: absolute;
     bottom: 10px;
 }
+/* Second section */
 .section2 {
     margin: 60px 50px 0px 50px;
 }
+/* Sub-section*/
 .section2_box {
     display: flex;
 }
+/* Main box */
 .box3 {
     height: 650px;
     width: 25%;
@@ -351,6 +337,7 @@ h4 {
     padding-top: 20px;
     padding-left: 20px;
 }
+/* Sub-Box */
 .box3_v1 {
     width: 100%;
     height: 55%;
@@ -369,7 +356,6 @@ h4 {
     height: calc(45% - 50px);
     box-shadow: 0px 5px 50px #c7c6c6;
     border-radius: 20px;
-    
 }
 .element3_img_v2 {
     width: 100%;
@@ -400,6 +386,7 @@ h4 {
     height: 236.8px;
     border-radius: 20px 20px 0 0;
 }
+/* Footer */
 footer {
     display: flex;
     background-color: #f2f2f2;
@@ -415,28 +402,24 @@ h3 {
 .anchor {
     color: black;
 }
-
 /* Responsive small screen*/
 @media screen and (max-width: 768px) {
     p {
         font-size: 22px !important;
     }
-
     /* Navigation Header */
-    header {
+    .header_main {
         margin: auto;
         width:100%;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 10px;
         margin-top: 20px;
-        
-    }
+      }
     nav {
         position: relative;
         margin-left: -50px;
         display: flex;
-
     }
     #nav_a {
         position: absolute;
@@ -444,7 +427,6 @@ h3 {
         top: -50px;
         font-size: 25px;
     }
-    
     .nav_a {          
         font-size: 25px;  
         margin-right: 0px !important;
@@ -454,7 +436,6 @@ h3 {
         border-bottom: 5px #e4e2e2 solid;
         padding-bottom: 10px;
     }
-    
     .nav_a:hover {
         border-top: none;
         border-bottom: 5px #0065FC solid;
@@ -463,11 +444,10 @@ h3 {
     .logo {
         height: 80px;
     }
-   
     h1 {
         font-size: 35px;
     }
-
+    /* Search and filter */
     .search_box {                
         width: 100%; 
         height: 65px;
@@ -482,14 +462,12 @@ h3 {
     .icon_map {
         font-size: 22px;
     }
-    
     .search_element:nth-child(1) {
         width: 14%;
         justify-content: center;
         align-items: center;
         background-color: #f2f2f2;
         border-radius: 15px 0px 0px 15px;
-    
     }
     .search_element:nth-child(2) {
         width: 72%;    
@@ -505,37 +483,27 @@ h3 {
         display: initial;
         font-size: 22px;
     }
-   
     .filter {        
         flex-wrap: wrap;
-    
-      }
+    }
     #filter_text {
         width: 100%;
         font-size: 22px;
         margin-bottom: 10px;
     }
-    
     .filter_box {
         margin: 30px 30px 0px 30px;
         transform: scale(1.25);
     }
     .filter_box:last-child {
         margin-left: 35px;
-        
     }
-
+    /* Info */
     .info_cercle {
         width: 45px;
         height: 35px;
     }
-
-
-
-
-        
-
-
+    /* First section */
     .section1 {
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -545,10 +513,42 @@ h3 {
         margin-right: 0;
         margin-top: 20px;
     }
-
     h2 {
         font-size: 35px;
     }
+    /* Sub-section */
+    .section1_box1 {
+        width: 85%;
+        width: calc(100% - 80px);
+        background-color: transparent;
+    }
+    .element1 {
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        height: 300px;
+      }
+    .element1_text1 {
+        font-size: 25px;
+        margin-top: 15px;
+    }  
+    .element1_text2 {
+        margin-top: 10px;
+    }
+    .element1_icon {
+        margin-top: -5px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    /* Sub-section */
+    .section1_box2 {
+        width: 85%;
+        width: calc(100% - 80px);
+        border-radius: 0;
+        margin-bottom: 20px;
+        padding-bottom: 40px;
+    } 
     .section1_box2_icon {
         font-size: 35px;
         top: 50px;
@@ -560,53 +560,11 @@ h3 {
         font-size: 25px;
         margin-top: 15px;
     }
-
-
-
-
-
-    .section1_box1 {
-        width: 85%;
-        width: calc(100% - 80px);
-        background-color: transparent;
-
-    }
-    
-    .section1_box2 {
-        width: 85%;
-        width: calc(100% - 80px);
-        border-radius: 0;
-        margin-bottom: 20px;
-        padding-bottom: 40px;
-    } 
-
-    .element1 {
-        width: 100%;
-        padding-bottom: 10px;
-        margin-bottom: 5px;
-        height: 300px;
-      }
-    .element1_text1 {
-        font-size: 25px;
-        margin-top: 15px;
-
-    }  
-    .element1_text2 {
-        margin-top: 10px;
-    }
-    .element1_icon {
-        margin-top: -5px;
-    }
-    h3 {
-        font-size: 25px;
-    }
-
-
+    /* Second section */
     .section2_box {
         flex-wrap: wrap;
 
     }  
-
     .box3 {
         width: 100%;
         margin-bottom: 50px;
@@ -619,27 +577,22 @@ h3 {
     .box3_res_2 {
         height: 250px;
     }
-
     .element3_img  {
         height: 180px;
     }
-    .element3_img_v1  {
-        
+    .element3_img_v1  {        
         height: 180px;
     }
-    .element3_img_v2  {
-        
+    .element3_img_v2  {        
         height: 180px;
     }
-    .element3_img_v3  {
-        
+    .element3_img_v3  {        
         height: 180px;
     }
-    .element3_img_v4  {
-        
+    .element3_img_v4  {        
         height: 180px;
     }
-   
+    /* Footer */
     footer  {
         flex-wrap: wrap;
         margin-top: 20px;
@@ -647,9 +600,7 @@ h3 {
     .footer_element {
         width: 100%;
     }   
-
 }
-
 /* Responsive tablet */
 @media screen and (min-width: 769px) and (max-width: 991px) {
      /* Navigation Header */
@@ -664,24 +615,21 @@ h3 {
     }
     .nav_a {           
         padding: 0px 5px 10px 5px;   
-    
     }
     .nav_a:hover {
         border-top: none;
         border-bottom: 3px #0065FC solid;
     }
-
+    /* Search and filter */
     .search_box {                
         width: 100%; 
     }
-    
     .search_element:nth-child(1) {
         width: 14%;
         justify-content: center;
         align-items: center;
         background-color: #f2f2f2;
         border-radius: 15px 0px 0px 15px;
-    
     }
     .search_element:nth-child(2) {
         width: 72%;    
@@ -697,7 +645,6 @@ h3 {
         display: initial;
         font-size: 20px;
     }
-   
     .filter {        
         flex-wrap: wrap;
     
@@ -705,13 +652,10 @@ h3 {
     #filter_text {
         width: 100%;
     }
-    
     .filter_box {
         margin: 10px 10px 10px 15px;
     }
-        
-
-
+    /* first Section */
     .section1 {
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -726,25 +670,19 @@ h3 {
         background-color: transparent;
 
     }
-    
     .section1_box2 {
         width: 85%;
         width: calc(100% - 80px);
         border-radius: 0;
         margin-bottom: 20px;
     } 
-
     .element1 {
         width: 43.4%;
         width: calc(50% - 50px);
       }
-
-    
-
-
+    /* Second section */
     .section2_box {
         flex-wrap: wrap;
-        
     }  
     .box3 {
         width: 46.4%;
@@ -752,21 +690,13 @@ h3 {
         margin-bottom: 50px;
         margin-right: 0 !important;
     }
-    
     .box3:nth-child(1) {
         margin-right: 50px !important;
     }
     .box3:nth-child(3) {
         margin-right: 50px !important;
     }
-   
-
-    
-   
-
-
-
-
+    /* Footer */
     footer  {
         flex-wrap: wrap;
         margin-top: 20px;
@@ -774,9 +704,4 @@ h3 {
     .footer_element {
         width: 50%;
     }   
-
-
-
-
-
 }
