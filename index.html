@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
         <title>Hotel</title>
     </head>
@@ -15,7 +16,7 @@
                     <a href="#top" class="nav_a">Hébergements</a>
                     <!-- focus don't work with link, and target don't work either -->
                     <a href="#bottom" class="nav_a">Activités</a>
-                    <a href="#" class="nav_a"><strong>S'inscrire</strong></a>
+                    <a href="#" id="nav_a"><strong>S'inscrire</strong></a>
                 </nav>
             </header>
 
@@ -30,12 +31,12 @@
                     <div class="search_element">
                         <input type="search" id="search" name="search" placeholder="Marseille, France">
                     </div>
-                    <div class="search_element"><button class="search_button">Rechercher</button></div>
+                    <div class="search_element"><button class="search_button"><p id="search_button_p">Rechercher</p><i class="fas fa-search" id="search_button_icon"></i></button></div>
                 </div>
                 
 
                 <div class="filter">
-                    <h4>Filtres</h4>                                        
+                    <h4 id="filter_text">Filtres</h4>                                        
                     <div class="filter_box">
                         <div class="filter_box_icon">
                             <i class="fas fa-money-bill-wave filter_icon"></i>
@@ -240,7 +241,7 @@
 
                 <div class="section2_box">
 
-                    <a href="#" class="box3 anchor">
+                    <a href="#" class="box3 anchor box3_res_1">
                         <!-- In box3 I can put one or more than one card -->
                         <div class="element3">
                             <img src="images/activites/3_medium/1.jpg" alt="activités" class="element3_img">
@@ -249,7 +250,7 @@
                     </a>
                     <div class="box3"> 
                         
-                        <a href="#" class="box3_v1 anchor">
+                        <a href="#" class="box3_v1 anchor box3_res_2">
                             <div class="element3_v1">
                                 <img src="images/activites/3_medium/2.jpg" alt="activités" class="element3_img_v1">
                                 <h4 class="element3_text">Fort de Pomègues</h4>
@@ -257,7 +258,7 @@
                             
 
                         </a>
-                        <a href="#" class="box3_v2 anchor">
+                        <a href="#" class="box3_v2 anchor box3_res_2">
                             <div class="element3_v2">
                                 <img src="images/activites/3_medium/3.jpg" alt="activités" class="element3_img_v2">
                                 <h4 class="element3_text">Îles du Frioul</h4>
@@ -266,7 +267,7 @@
                         </a>
 
                     </div>
-                    <a href="#" class="box3 anchor">
+                    <a href="#" class="box3 anchor box3_res_1">
                         <div class="element3">
                             <img src="images/activites/3_medium/4.jpg" alt="activités" class="element3_img">
                             <h4 class="element3_text">Parc National des Calanques</h4>
@@ -274,14 +275,14 @@
                     </a>
                     <div class="box3">  
 
-                        <a href="#" class="box3_v3 anchor">
+                        <a href="#" class="box3_v3 anchor box3_res_2">
                             <div class="element3_v3">
                                 <img src="images/activites/3_medium/5.jpg" alt="activités" class="element3_img_v3">
                                 <h4 class="element3_text">Notre-Dame-de-la-Garde</h4>
                             </div> 
                             
                         </a>
-                        <a href="#" class="box3_v4 anchor">
+                        <a href="#" class="box3_v4 anchor box3_res_2">
                             <div class="element3_v4">
                                 <img src="images/activites/3_medium/6.jpg" alt="activités" class="element3_img_v4">
                                 <h4 class="element3_text">Parc Longchamp</h4>
