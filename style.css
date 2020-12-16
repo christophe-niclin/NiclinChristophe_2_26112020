@@ -5,18 +5,15 @@
 }
 body {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 img {
     color: transparent; /* hide alt text when loading */
 }
 h1 {
     font-size: 25px;
-}
-.bloc_page {
-    /* margin are here to erase the white line on the side */
-    margin-right: -8px;
-    margin-left: -8px;
-    margin-bottom: -8px;
 }
 /* Navigation */
 .header_main {
@@ -102,16 +99,6 @@ a {
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgb(0, 0, 0);
-    opacity: 1; /* Firefox */
-  }
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgb(0, 0, 0);
-  }
-    ::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgb(0, 0, 0);
-  }
 .filter {
     margin-top: 25px;
     margin-bottom: 20px;
@@ -135,6 +122,7 @@ h4 {
     transform: scale(1.2);
     background-color: #fc65007a;
     color: white;
+    cursor: pointer;
 }
 .filter_box_icon {
     background-color: #deebff;
@@ -396,9 +384,8 @@ h3 {
     /* Navigation Header */
     .header_main {
         margin: auto;
-        width:100%;
         padding-left: 50px;
-        padding-right: 50px;
+        padding-right: -50px;
         padding-bottom: 10px;
         margin-top: 20px;
       }
@@ -416,7 +403,6 @@ h3 {
     .nav_a {          
         font-size: 25px;  
         margin-right: 0px !important;
-        display: block;
         padding-left: 50px;
         width: 100%;
         border-bottom: 5px #e4e2e2 solid;
