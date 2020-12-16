@@ -544,10 +544,7 @@ h3 {
         margin-right: 0 !important;
         height: 550px; /* 2*height_image + margin-bottom */
     }
-    .box3_res_1 {
-        height: 250px;
-    }
-    .box3_res_2 {
+    .box3_res {
         height: 250px;
     }
     .element3_img  {
