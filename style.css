@@ -383,11 +383,12 @@ h3 {
     }
     /* Navigation Header */
     .header_main {
-        margin: auto;
-        padding-left: 50px;
-        padding-right: -50px;
+        margin-left: 50px;
+        margin-right: 50px;
         padding-bottom: 10px;
         margin-top: 20px;
+        width: 91.7%;
+        width: calc(100% - 50px);
       }
     nav {
         position: relative;
