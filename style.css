@@ -44,7 +44,7 @@ a {
 }
 /* Search and Filter field */
 .search {
-    margin: 30px 50px 0px 50px;
+    margin: 1.9em 3.1em 0px 3.1em;
 }
 .search_p {
     margin-top: -10px;
@@ -86,8 +86,8 @@ a {
 #search {
     width: 100%;
     border: none;
-    padding: 0px 10px 0px 20px;
-    font-size: 1.12em;
+    padding: 0px 0.6em 0px 0.6em;
+    font-size: 1em;
     font-weight: bold;
 }
 .search_button {
@@ -106,7 +106,7 @@ a {
     align-items: center;
   }
 h4 {
-    font-size: 1.12em;
+    font-size: 1em;
     margin-right: 10px;
 }
 .filter_box {
@@ -196,12 +196,18 @@ h4 {
     border: 5px white solid;
     margin: 20px;
     box-shadow: 0 5px 50px #c7c6c6;
-  }
+    display: flex;
+    flex-wrap: wrap;
+}
 .element1_img {
     height: 160px;
     width: 100%;
     border-radius: 18px 18px 0px 0px;
-  }
+}
+.element1_title {
+    width:100%;
+    align-self: flex-start;
+}
 .element1_text1 {
     margin-top: 5px;
     margin-bottom: 0px;
@@ -214,6 +220,8 @@ h4 {
     }
 .element1_icon {
     padding-left: 10px;
+    align-self: flex-end;
+
 }
 .icon_blue {
     color: #0065FC;
@@ -246,8 +254,8 @@ h4 {
     flex-wrap: wrap;
 }
 .element2 {
-    height: 180px;
     width: 100%;
+    height: 180px;
     background-color: white;
     border: 5px white solid;
     border-radius: 20px;
@@ -256,13 +264,19 @@ h4 {
     box-shadow: 0 5px 50px #c7c6c6;
 }
 .element2_img {
-    height: 100%;
-    width: 40%;       
+    width: 40%;  
+    height: 100%;  
     border-radius: 18px 0px 0px 18px;
     }
 .element2_text {
-    margin-left: 25px;
-    position: relative;
+    margin-left: 1.25em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.element2_title {
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
 }
 .element2_text1 {
     margin-bottom: 8px;
@@ -271,8 +285,7 @@ h4 {
     margin-top: 0px;
 }
 .element2_icon {
-    position: absolute;
-    bottom: 10px;
+    align-self: flex-end;
 }
 /* Second section */
 .section2 {
@@ -284,7 +297,6 @@ h4 {
 }
 /* Main box */
 .box3 {
-    height: 650px;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -380,7 +392,7 @@ h3 {
     color: black;
 }
 /* Responsive small screen*/
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     /* Navigation Header */
     .header_main {
         margin-left: 50px;
@@ -451,15 +463,9 @@ h3 {
     }
     .filter_box {
         margin: 30px 30px 0px 30px;
-        transform: scale(1.25);
     }
     .filter_box:last-child {
         margin-left: 35px;
-    }
-    /* Info */
-    .info_cercle {
-      /*  width: 45px;
-        height: 35px;*/
     }
     /* First section */
     .section1 {
@@ -481,14 +487,10 @@ h3 {
         width: 100%;
         padding-bottom: 10px;
         margin-bottom: 5px;
-        height: 300px;
       }
     .element1_text1 {
-        margin-top: 15px;
+        margin-top: 0.6em;
     }  
-    .element1_text2 {
-        margin-top: 10px;
-    }
     .element1_icon {
         margin-top: -5px;
     }
@@ -500,9 +502,6 @@ h3 {
         margin-bottom: 20px;
         padding-bottom: 40px;
     } 
-  /*  .section1_box2_icon {
-        top: 50px;
-    }*/
     .element2 {
         height: 200px;
     }
@@ -547,7 +546,7 @@ h3 {
     }   
 }
 /* Responsive tablet */
-@media screen and (min-width: 481px) and (max-width: 1100px) {
+@media screen and (min-width: 769px) and (max-width: 1175px) {
      /* Navigation Header */
      nav {
         position: relative;
@@ -592,8 +591,7 @@ h3 {
     }
     .filter {        
         flex-wrap: wrap;
-    
-      }
+    }
     #filter_text {
         width: 100%;
     }
@@ -625,6 +623,9 @@ h3 {
         width: 43.4%;
         width: calc(50% - 50px);
       }
+      .element2 {
+         height: 100%;
+    }
     /* Second section */
     .section2_box {
         flex-wrap: wrap;
